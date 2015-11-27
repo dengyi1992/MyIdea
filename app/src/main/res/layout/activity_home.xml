@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/erweima_yellow"
+            android:onClick="scan"
+            />
+        <TextView
+            android:layout_weight="11"
+            style="@style/MyTitleStyle"
+            android:text="My Idea"/>
+        <Button
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/lianxiren_yellow"
+            android:onClick="choose"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_qr_image"
+            android:src="@drawable/initial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="BY:DY"
+            android:id="@+id/tv_show_info"
+            android:layout_gravity="bottom"
+            style="@style/MyContentStyle" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
